@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hemkund valley</title>
+  <link rel="stylesheet" href="hemkund.css">
+  <link rel="icon" type="image/png" href="icon.png">
+  <!----------------------top BAR--------------------->
+  <div id="topbar"></div>
+  <!----------------------Navbar--------------------->
+  <div id="navbar">
+    <h1><a href="index.html">HemkundValley.com</a></h1>
+    <h2><a href="index.html">Home</a></h2>
+    <h2><a href="contact.html">Contact</a></h2>
+    <h2><a href="gallery.html">Gallery</a></h2>
+    <h2><a href="accomodation.html">Accomodation</a></h2>
+  </div>
+</head>
+
+<body>
+  <!---------------------- Main BIG PICTURE -------------------->
+  <div id="big">
+    <div id="mainpic"></div>
+    <div id="maintext">Shri Hemkund Sahib</div>
+  </div>
+  <!----------------------Current Status--------------------->
+  <div id="currently">
+    <h2>Current Status:</h2>
+    <div id="statuspic"></div>
+    <p id="statustxt">For Visitors.</p>
+  </div>
+  <!---------------------- MAP --------------------->
+  <div id="map-container" style="width:100%;max-width:600px;margin:auto;">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1630.467327025391!2d79.6154045994141!3d30.699223902921183!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a7910ca401734d%3A0x8e85695a9a89d9fd!2sSri%20Hemkunt%20Gurudwara%20Sahib%20Ji!5e1!3m2!1sen!2sin!4v1754322859839!5m2!1sen!2sin"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <!---------------------- ABOUT HEMKUND --------------------->
+  <div id="about">
+    <div id="abouthemkund">
+      <h1>About Hemkund Sahib</h1>
+      <div id="abthemkund">
+        <p>Hemkund Sahib is a revered Sikh pilgrimage site located in the Indian state of Uttarakhand. It is situated at
+          an altitude of 4,632 meters (15,197 feet) and is surrounded by seven snow-capped peaks. The site is known for
+          its serene beauty and the sacred Hemkund Lake, which is believed to have healing properties.</p>
+        <p>The Gurudwara at Hemkund Sahib was established in 1936 by Sant Sewa Singh, who had a vision of Guru Gobind
+          Singh Ji, the tenth Sikh Guru. The Gurudwara attracts thousands of pilgrims every year, especially during the
+          summer months when the weather is more favorable for trekking.</p>
+      </div>
+    </div>
+    <!---------------------- PICTURE NEXT TO ABOUT HEMKUND --------------------->
+    <div id="abtpicture"></div>
+  </div>
+  <!---------------------- TIPS AND INSTRUCTIONS --------------------->
+  <div id="tips">
+    <div id="tipspic"></div>
+  </div>
+  <!---------------------- ROUTE / MAP --------------------->
+  <div id="route">
+    <h1 id="routeheading">Checkpoints to Hemkund Sahib</h1>
+    <div id="routepic"></div>
+  </div>
+  <!---------------------- WEATHER--------------------->
+  <div id="weather">
+    <h1 id="weatherheading"> Current Weather at Hemkund Sahib</h1>
+    <button id="getweather" onclick="getweather()">Know Current weather</button>
+    <div id="weatherdisplay"></div>
+    <div id="weatherpic"></div>
+    <br>
+    <!---------------------- Video--------------------->
+    <video autoplay loop muted width="300">
+      <source src="hemkund_vid.mp4" type="video/mp4">
+    </video>
+    <!----------------------FOOTER--------------------->
+    <footer>
+      <div id="footertext">© 2025 HemkundValley.com | All Rights Reserved</div>
+      <div id="footerlinks">
+        <a href="#">Privacy Policy</a> |
+        <a href="#">Terms of Service</a> |
+        <a href="#">Contact Us</a>
+      </div>
+    </footer>
+  </div>
+  <script src="hemkund.js"></script>
+</body>
+
+</html>

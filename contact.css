@@ -1,0 +1,338 @@
+/* Box sizing and basic resets */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Body styling */
+#topbar{
+  height: 50px;
+  background-color: rgb(51, 51, 57);
+}
+/******************************NAVBAR*****************************/
+#navbar{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgba(212, 213, 214, 0.6);
+}
+h1{
+  font-size: 2.5rem;
+  color: rgb(91, 91, 96);
+}
+
+a{
+  color: rgb(38, 38, 38);
+  text-decoration: none;
+  transition: 0.5s;
+}
+a:hover{
+  color: black;
+  transform: scale(2);
+}
+/******************************Heading*****************************/
+#head{
+    text-align: center;
+    margin: 20px 0;
+    font-size: 3rem;
+    color: rgb(58, 58, 63);
+}
+#txt{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-size: 1.2rem;
+    color: rgb(56, 56, 61);
+    line-height: 1.6;
+}
+/******************************Form container*****************************/
+#form-container{
+    height: 500px;
+    width:900px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-self: center;
+}
+#contact-form{
+display: flex;
+width: 500px;
+height: 500px;
+justify-self: center;
+border: 2px solid black;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+    justify-content: space-between;
+}
+#name{
+    width: 400px;
+    height: 50px;
+}
+#email{
+    width: 400px;
+    height: 50px;
+}
+#message{
+    width: 400px;
+    height: 200px;
+}
+button{
+    height: 30px;
+    width: 300px;
+    background-color: royalblue;
+    color: white;
+    font-size: 1.5rem;
+    align-self: center;
+    transition: 0.5s;
+    border: none;
+    border-radius: 10px 10px 10px 10px;
+}
+button:hover{
+    color: black; 
+    background-color: rgb(173, 216, 230);
+    font-size: 1.5rem;
+}
+#contactinfo{
+    height: 500px;
+    width: 300px;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+h3{
+  font-size: 2rem;
+}
+#mail,links{
+  font-size: 1.005rem;
+  color: rgb(56, 56, 61);
+}
+/******************************Footer*****************************/
+footer {
+  width: 100%;
+  height: 90px;
+  color: white;
+  background: #8585fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+
+#footertext,
+#footerlinks {
+  width: 100%;
+  text-align: center;
+  margin: 8px 0;
+}
+@media (max-width: 600px) {
+  html, body {
+    width: 100vw;
+    max-width: 100vw;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+
+  #topbar {
+    height: 40px;
+    width: 100vw;
+    max-width: 100vw;
+  }
+
+  #navbar {
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 0;
+    gap: 10px;
+    width: 100vw;
+    max-width: 100vw;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+    text-align: center;
+    width: 100vw;
+    max-width: 100vw;
+    box-sizing: border-box;
+  }
+
+  #head {
+    font-size: 1.5rem;
+    margin: 16px 0;
+    width: 100vw;
+    max-width: 100vw;
+    box-sizing: border-box;
+  }
+
+  #txt {
+    width: 90vw;
+    max-width: 96vw;
+    font-size: 1rem;
+    padding: 0 2vw;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+
+  #form-container {
+    flex-direction: column;
+    width: 98vw;
+    max-width: 100vw;
+    height: auto;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  #contact-form {
+    width: 90vw;
+    max-width: 96vw;
+    height: auto;
+    min-height: 320px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+  }
+
+  form {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  #name,
+  #email,
+  #message {
+    width: 86vw;
+    max-width: 92vw;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+
+  #message {
+    height: 120px;
+  }
+
+  button {
+    width: 60vw;
+    max-width: 160px;
+    font-size: 1.1rem;
+    height: 36px;
+    margin-top: 10px;
+  }
+
+  #contactinfo {
+    width: 90vw;
+    max-width: 96vw;
+    height: auto;
+    min-height: 180px;
+    margin: 0 auto 16px auto;
+    padding: 10px 0;
+    box-sizing: border-box;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  #mail, links {
+    font-size: 1rem;
+  }
+
+  footer {
+    min-height: 100px;
+    font-size: 1rem;
+    padding: 18px 0;
+    width: 100vw;
+    max-width: 100vw;
+    position: relative;
+    bottom: -53px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  #footertext,
+  #footerlinks {
+    font-size: 1rem;
+    margin: 6px 0;
+    width: 100vw;
+    max-width: 100vw;
+    box-sizing: border-box;
+  }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+  html, body {
+    width: 100vw;
+    max-width: 100vw;
+    min-height: 100vh;
+    height: 100vh;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+
+  body {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  #main-content {
+    flex: 1 0 auto;
+  }
+
+  #navbar {
+    width: 100vw;
+    max-width: 100vw;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  #form-container {
+    width: 98vw;
+    max-width: 98vw;
+  }
+
+  #contact-form,
+  #contactinfo {
+    width: 48vw;
+    max-width: 600px;
+    min-width: 220px;
+    box-sizing: border-box;
+  }
+
+  footer {
+    width: 100vw;
+    max-width: 100vw;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin-top: auto;
+    flex-shrink: 0;
+    box-sizing: border-box;
+  }
+
+  #name,
+  #email,
+  #message {
+    width: 95%;
+    max-width: 100%;
+  }
+}

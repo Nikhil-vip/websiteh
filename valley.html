@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="valley.css">
+  <!----------------------top BAR--------------------->
+  <div id="topbar"></div>
+  <!----------------------Navbar--------------------->
+  <div id="navbar">
+    <h1><a href="index.html">HemkundValley.com</a></h1>
+    <h2><a href="index.html">Home</a></h2>
+    <h2><a href="contact.html">Contact</a></h2>
+    <h2><a href="gallery.html">Gallery</a></h2>
+    <h2><a href="accomodation.html">Accomodation</a></h2>
+  </div>
+</head>
+
+<body>
+  <!---------------------- Main BIG PICTURE -------------------->
+  <div id="big">
+    <div id="mainpic"></div>
+    <div id="maintext">Valley Of Flowers</div>
+  </div>
+  <!----------------------Current Status--------------------->
+  <div id="currently">
+    <h2>Current Status:</h2>
+    <div id="statuspic"></div>
+    <p id="statustxt">For Visitors.</p>
+  </div>
+  <!---------------------- MAP --------------------->
+  <div id="map-container" style="width:100%;max-width:600px;margin:auto;">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3259.992009014125!2d79.60477490420881!3d30.72710794784777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a791153bd771ef%3A0x1f42050f9b6c125f!2sValley%20of%20Flowers%20National%20Park!5e1!3m2!1sen!2sin!4v1755013587213!5m2!1sen!2sin"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <!---------------------- ABOUT Valley --------------------->
+  <div id="about">
+    <div id="aboutvalley">
+      <h1>About Valley Of Flowers</h1>
+      <div id="abtvalley">
+        <p>The Valley of Flowers is a UNESCO World Heritage Site located in the Chamoli district of Uttarakhand, India.
+          Nestled in the Western Himalayas at an altitude of about 3,600 meters, this stunning valley is renowned for
+          its breathtaking meadows covered with vibrant alpine flowers, rare plants, and diverse wildlife.</p>
+        <p>During the monsoon season, the valley transforms into a colorful paradise with hundreds of species of
+          blossoms in full bloom. It is not only a treat for nature lovers and trekkers but also holds great spiritual
+          significance, making it one of the most enchanting destinations in the Himalayas.</p>
+      </div>
+    </div>
+    <!---------------------- PICTURE NEXT TO ABOUT Valley --------------------->
+    <div id="abtpicture"></div>
+  </div>
+  <!---------------------- TIPS AND INSTRUCTIONS --------------------->
+  <div id="tips">
+    <div id="tipspic"></div>
+  </div>
+  <!---------------------- ROUTE / MAP --------------------->
+  <div id="route">
+    <h1 id="routeheading">Checkpoints to Valley Of Flowers</h1>
+    <div id="routepic"></div>
+  </div>
+  <!---------------------- WEATHER--------------------->
+  <div id="weather">
+    <h1 id="weatherheading"> Current Weather at Valley Of Flowers</h1>
+    <button id="getweather" onclick="getweather()">Know Current weather</button>
+    <div id="weatherdisplay"></div>
+    <div id="weatherpic"></div>
+    <br>
+    <!---------------------- Video--------------------->
+    <video autoplay loop muted width="300">
+      <source src="valley-vid.mp4" type="video/mp4">
+    </video>
+    <!----------------------FOOTER--------------------->
+    <footer>
+      <div id="footertext">© 2025 HemkundValley.com | All Rights Reserved</div>
+      <div id="footerlinks">
+        <a href="#">Privacy Policy</a> |
+        <a href="#">Terms of Service</a> |
+        <a href="#">Contact Us</a>
+      </div>
+    </footer>
+  </div>
+</body>
+<script src="valley.js"></script>
+
+</html>

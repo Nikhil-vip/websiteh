@@ -1,0 +1,444 @@
+/* Box sizing and basic resets */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body styling */
+#topbar {
+  height: 50px;
+  background-color: rgb(65, 223, 255);
+}
+
+/******************************NAVBAR*****************************/
+#navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgba(214, 212, 212, 0.6);
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: rgb(65, 223, 255);
+}
+
+#hemkundtitle {
+  font-size: 2rem;
+  color: rgb(27, 0, 233);
+  text-align: center;
+  margin: 10px 0;
+}
+
+#Valleytitle {
+  font-size: 2rem;
+  color: rgb(255, 1, 230);
+  text-align: center;
+  margin: 10px 0;
+}
+
+#randomtitle {
+  font-size: 2rem;
+  color: rgb(255, 1, 1);
+  text-align: center;
+  margin: 10px 0;
+}
+
+a {
+  color: rgb(65, 223, 255);
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+a:hover {
+  color: black;
+  transform: scale(1.05);
+}
+
+/******************************P i c t u r e s (hemkund)****************************/
+#hemkund {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  padding: 10px;
+}
+
+#hemkund>div {
+  background-color: #f1f1f1;
+  color: #000;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+#hemkundpic1 {
+  grid-column: 1 / span 2;
+  height: 500px;
+  width: 271px;
+  background-image: url(hpic1.jpg);
+  background-size: cover;
+}
+
+#hemkundpic2 {
+  grid-row: 1 / span 2;
+  height: 450px;
+  width: 600px;
+  background-image: url(hpic2.jpg);
+  background-size: cover;
+
+}
+
+#hemkundpic5 {
+  grid-column: 1 / span 3;
+  height: 400px;
+  width: 320px;
+  background-image: url(hpic5.jpg);
+  background-size: cover;
+}
+
+#hemkundpic3 {
+  height: 450px;
+  width: 600px;
+  background-image: url(hpic3.jpg);
+  background-size: cover;
+}
+
+#hemkundpic4 {
+  height: 400px;
+  width: 300px;
+  background-image: url(hpic4.jpg);
+  background-size: cover;
+}
+
+/******************************P i c t u r e s (valley)****************************/
+#valley {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  padding: 10px;
+}
+
+#valleypic1 {
+  height: 400px;
+  width: 400px;
+  background-image: url(valley.1.jpg);
+  background-size: cover;
+}
+
+#valleypic2 {
+  height: 400px;
+  width: 400px;
+  background-image: url(valley\ gallery2.png);
+  background-size: cover;
+}
+
+#valleypic3 {
+  height: 400px;
+  width: 400px;
+  background-image: url(valley\ galler3.png);
+  background-size: cover;
+}
+
+#valleypic4 {
+  height: 400px;
+  width: 600px;
+  background-image: url(valley\ gallery1.png);
+  background-size: cover;
+}
+
+/******************************P i c t u r e s (random)****************************/
+#random {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  padding: 10px;
+}
+
+#randompic1 {
+  height: 300px;
+  width: 400px;
+  background-image: url(rpic1.jpg);
+  background-size: cover;
+}
+
+#randompic2 {
+  height: 300px;
+  width: 400px;
+  background-image: url(rpic2.jpg);
+  background-size: cover;
+}
+
+#randompic3 {
+  height: 400px;
+  width: 400px;
+  background-image: url(rpic3.jpg);
+  background-size: cover;
+}
+
+#randompic4 {
+  height: 400px;
+  width: 600px;
+  background-image: url(rpic4.jpg);
+  background-size: cover;
+}
+
+#randompic5 {
+  height: 400px;
+  width: 600px;
+  background-image: url(rpic5.jpg);
+  background-size: cover;
+}
+
+#randompic6 {
+  height: 400px;
+  width: 600px;
+  background-image: url(rpic6.jpg);
+  background-size: cover;
+}
+
+footer {
+  width: 100%;
+  height: 90px;
+  color: white;
+  background: #8585fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+
+#footertext,
+#footerlinks {
+  width: 100%;
+  text-align: center;
+  margin: 8px 0;
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  #topbar {
+    height: 40px;
+  }
+
+  #navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 0;
+    gap: 8px;
+    font-size: x-small;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  a {
+    font-size: 0.8rem;
+  }
+
+
+  h1 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+
+  /* Hemkund Gallery */
+  #hemkund {
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    padding: 10px;
+    width: 98vw;
+    max-width: 100vw;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  #hemkund>div,
+  #hemkundpic1,
+  #hemkundpic2,
+  #hemkundpic3,
+  #hemkundpic4,
+  #hemkundpic5 {
+    width: 100%;
+    max-width: 100%;
+    height: 260px;
+    font-size: 1.1rem;
+    box-sizing: border-box;
+  }
+
+  #hemkundpic1,
+  #hemkundpic2,
+  #hemkundpic3,
+  #hemkundpic4,
+  #hemkundpic5 {
+    height: 260px;
+  }
+
+  #hemkundpic5 {
+    grid-column: 1 / span 2;
+    width: 100%;
+  }
+
+  /* Valley Gallery */
+  #valley {
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    padding: 10px;
+    width: 98vw;
+    max-width: 100vw;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  #valleypic1,
+  #valleypic2,
+  #valleypic3,
+  #valleypic4 {
+    width: 100%;
+    max-width: 100%;
+    height: 260px;
+    box-sizing: border-box;
+  }
+
+  /* Random Gallery */
+  #random {
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    padding: 10px;
+    width: 98vw;
+    max-width: 100vw;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  #randompic1,
+  #randompic2,
+  #randompic3,
+  #randompic4,
+  #randompic5,
+  #randompic6 {
+    width: 100%;
+    max-width: 100%;
+    height: 260px;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 600px) {
+  #topbar {
+    height: 40px;
+  }
+
+  #navbar {
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 0;
+    gap: 8px;
+    font-size: x-small;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  a {
+    font-size: 1rem;
+  }
+
+
+  h1 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+
+  /* Hemkund Gallery */
+  #hemkund {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 8px;
+    width: 98vw;
+    max-width: 100vw;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  #hemkund>div,
+  #hemkundpic1,
+  #hemkundpic2,
+  #hemkundpic3,
+  #hemkundpic4,
+  #hemkundpic5 {
+    width: 100%;
+    max-width: 100%;
+    height: 180px;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+
+  /* Valley Gallery */
+  #valley {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 8px;
+    width: 98vw;
+    max-width: 100vw;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  #valleypic1,
+  #valleypic2,
+  #valleypic3,
+  #valleypic4 {
+    width: 100%;
+    max-width: 100%;
+    height: 180px;
+    box-sizing: border-box;
+  }
+
+  /* Random Gallery */
+  #random {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 8px;
+    width: 98vw;
+    max-width: 100vw;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  #randompic1,
+  #randompic2,
+  #randompic3,
+  #randompic4 {
+    width: 100%;
+    max-width: 100%;
+    height: 180px;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  #navbar {
+    font-size: 1.2rem;
+    /* Increased by 20% from 1rem */
+  }
+
+  #navbar a {
+    font-size: 1.2rem;
+    /* Ensure links are also increased */
+  }
+}

@@ -1,0 +1,666 @@
+/* Box sizing and basic resets */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body styling */
+#topbar {
+  height: 50px;
+  background-color: rgb(33, 157, 43);
+}
+
+body {
+  background-color: rgb(245, 239, 225);
+}
+
+/******************************NAVBAR*****************************/
+#navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgba(255, 252, 252, 0.6);
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: rgb(0, 0, 255);
+}
+
+a {
+  color: rgb(33, 157, 43);
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+a:hover {
+  color: black;
+  transform: scale(2);
+}
+
+/******************************MAIN   BIG  PICTURE*****************************/
+#mainpic {
+  width: 100%;
+  height: 500px;
+  background-image: url(valley\ banner.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-color: rgb(0, 255, 13);
+  transform: scale(0.7);
+  animation: mainpic-zoom-in 1.2s ease-out 1s 1 forwards;
+}
+
+@keyframes mainpic-zoom-in {
+  from {
+    transform: scale(0.7);
+    opacity: 0.7;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+#maintext {
+  position: absolute;
+  top: 630px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  text-align: center;
+  width: 90%;
+  font-size: 3rem;
+  color: rgb(0, 255, 42);
+  font-weight: bolder;
+}
+
+/****************************** S t a t u s ****************************/
+#currently {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+  top: 50px;
+}
+
+#statuspic {
+  height: 50px;
+  width: 50px;
+  margin-left: 20px;
+  background-image: url(closed.png);
+  border-radius: 50%;
+  background-size: cover;
+}
+
+#statustxt {
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+/******************************M A P****************************/
+#map-container {
+  width: 100%;
+  max-width: 600px;
+  position: relative;
+  top: 100px;
+}
+
+/******************************ABOUT Valley of flowers****************************/
+#about {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#aboutvalley {
+  height: 300px;
+  width: 700px;
+  background-color: rgb(95, 238, 114);
+  position: relative;
+  top: 180px;
+  left: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  border-radius: 20px 20px 20px 20px;
+}
+
+#abtvalley {
+  font-weight: bold;
+  font-size: larger;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/****************************** PICTURE NEXT ABOUT SHRI valley ****************************/
+#abtpicture {
+  height: 300px;
+  width: 700px;
+  background-image: url(valley\ about\ now.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  margin-left: 20px;
+  position: relative;
+  top: 180px;
+}
+
+/******************************T I Ps****************************/
+#tips {
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+#tipspic {
+  width: 40%;
+  height: 900px;
+  background-image: url(tips.png);
+  background-size: cover;
+  align-self: center;
+}
+
+/******************************R O U T E****************************/
+#routeheading {
+  font-size: 3rem;
+  color: rgb(5, 172, 24);
+  text-align: center;
+}
+
+#route {
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+#routepic {
+  width: 40%;
+  height: 900px;
+  background-image: url(valley_route.png);
+  background-size: cover;
+  align-self: center;
+}
+
+/****************************** W E A T H E R****************************/
+#weather {
+  height: 700px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#weatherheading {
+  text-align: center;
+  font-weight: bold;
+}
+
+#weatherdisplay {
+  height: 100px;
+  width: 40%;
+  justify-content: center;
+  align-self: center;
+  font-size: 2rem;
+  line-height: 1.5;
+  display: flex;
+}
+
+#weatherpic {
+  height: 286px;
+  width: 295px;
+  opacity: 0;
+}
+
+#getweather {
+  height: 30px;
+  width: 100px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+footer {
+  width: 100%;
+  height: 90px;
+  color: white;
+  background: #8585fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+
+video {
+  height: 1px;
+  width: 1px;
+  opacity: 0%;
+}
+
+#footertext,
+#footerlinks {
+  width: 100%;
+  text-align: center;
+}
+
+/******************************MEDIA QUERIES****************************/
+@media (max-width: 600px) {
+  #topbar {
+    height: 40px;
+  }
+
+  #navbar {
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 0;
+    gap: 8px;
+    font-size: x-small;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  a {
+    font-size: 0.8rem;
+  }
+
+  #mainpic {
+    width: 100%;
+    height: 180px;
+  }
+
+  #maintext {
+    opacity: 0;
+  }
+
+  #currently {
+    height: 70px;
+    width: 100%;
+    font-size: 0.5rem;
+    position: relative;
+    top: -5px;
+  }
+
+  #statuspic {
+    height: 20px;
+    width: 20px;
+  }
+
+  #statustxt {
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+  }
+
+  #map-container {
+    width: 85vw !important;
+    max-width: 320px !important;
+    height: 160px !important;
+    margin: 16px auto !important;
+    top: -10px !important;
+    /* Move map 50px up */
+    position: relative;
+  }
+
+  #map-container iframe {
+    width: 100% !important;
+    height: 160px !important;
+  }
+
+  #about {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+
+  #aboutvalley,
+  #abtpicture {
+    width: 96vw;
+    height: 180px;
+    margin: 10px 0;
+    font-size: 1rem;
+    border-radius: 12px;
+    padding: 8px;
+    left: 0;
+    top: 0;
+  }
+
+  #abtvalley {
+    font-size: 1rem;
+    /* Decreased font size */
+    width: 95%;
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 8px 0;
+    height: 150px;
+    overflow-y: auto;
+  }
+
+  #aboutvalley {
+    height: 220px;
+    /* Increased container height */
+    width: 96vw;
+    /* Increased container width */
+    max-width: 98vw;
+    padding: 8px;
+  }
+
+  #abtpicture {
+    margin-left: 0;
+  }
+
+  #tips {
+    height: auto;
+    min-height: 160px;
+    padding: 10px 5px;
+    width: 100vw;
+    margin-bottom: 18px;
+  }
+
+  #tipspic {
+    width: 130%;
+    height: 800px;
+    border-radius: 10px;
+    transform: scale(0.8);
+  }
+
+  #routepic {
+    width: 500px;
+    height: 700px;
+    position: relative;
+    top: -100px;
+    border-radius: 10px;
+    transform: scale(0.7);
+  }
+
+  #routeheading {
+    position: relative;
+    top: -50px;
+  }
+
+  #weather {
+    position: relative;
+    top: -200px;
+  }
+
+  #weatherdisplay {
+    width: 90%;
+    height: auto;
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+
+  /******************************video****************************/
+  video {
+    height: 200px;
+    width: 400px;
+    opacity: 100%;
+    position: relative;
+    bottom: -100px;
+    border-radius: 10px 10px 10px 10px;
+  }
+
+  footer {
+    position: relative;
+    bottom: -200px;
+  }
+
+  #footertext,
+  #footerlinks {
+    width: 100%;
+    text-align: center;
+    margin: none;
+  }
+}
+
+@media (max-width: 400px) {
+  #tips {
+    height: auto;
+    min-height: 160px;
+    padding: 10px 5px;
+    width: 100vw;
+    margin-bottom: 18px;
+  }
+
+  #tipspic {
+    width: 140%;
+    height: 800px;
+    border-radius: 10px;
+    transform: scale(0.8);
+  }
+
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  #topbar {
+    height: 48px;
+  }
+
+  #navbar {
+    flex-direction: row;
+    align-items: center;
+    padding: 16px 0;
+    gap: 18px;
+    font-size: 1.2rem;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  a {
+    font-size: 1.2rem;
+  }
+
+  #mainpic {
+    width: 100%;
+    height: 340px;
+  }
+
+  #maintext {
+    font-size: 2.2rem;
+    top: 400px;
+    width: 90vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 3vw;
+  }
+
+  #currently {
+    height: 80px;
+    font-size: 1.2rem;
+    top: 20px;
+  }
+
+  #statuspic {
+    height: 36px;
+    width: 36px;
+  }
+
+  #statustxt {
+    font-size: 1.5rem;
+  }
+
+  #map-container {
+    width: 80vw !important;
+    max-width: 700px !important;
+    height: 220px !important;
+    margin: 24px auto !important;
+    top: 40px !important;
+    position: relative;
+  }
+
+  #map-container iframe {
+    width: 100% !important;
+    height: 220px !important;
+  }
+
+  #about {
+    flex-direction: row;
+    align-items: flex-start;
+    height: auto;
+    width: 100vw;
+    padding: 0 2vw;
+    gap: 32px;
+  }
+
+  #aboutvalley,
+  #abtpicture {
+    width: 44vw;
+    min-width: 320px;
+    max-width: 480px;
+    height: 320px;
+    margin: 24px 0;
+    font-size: 1.1rem;
+    border-radius: 18px;
+    padding: 18px;
+    left: 0;
+    top: 0;
+  }
+
+  #abtvalley {
+    font-size: 1.1rem;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 12px 0;
+    height: auto;
+    min-height: 160px;
+    overflow-y: auto;
+  }
+
+  #tips {
+    height: auto;
+    min-height: 320px;
+    padding: 18px 0;
+    width: 100vw;
+    margin-bottom: 32px;
+  }
+
+  #tipspic {
+    width: 60vw;
+    min-width: 320px;
+    max-width: 480px;
+    height: 700px;
+    border-radius: 14px;
+    transform: scale(1);
+    margin: 0 auto;
+  }
+
+  #route {
+    height: auto;
+    min-height: 320px;
+    padding: 18px 0;
+    width: 100vw;
+    margin-bottom: 32px;
+  }
+
+  #routepic {
+    width: 60vw;
+    min-width: 320px;
+    max-width: 480px;
+    height: 670px;
+    border-radius: 14px;
+    transform: scale(1);
+    margin: 0 auto;
+  }
+
+  #routeheading {
+    font-size: 2rem;
+    margin-bottom: 18px;
+    position: static;
+    top: 0;
+  }
+
+  #weather {
+    min-height: 320px;
+    padding: 18px 0;
+    width: 100vw;
+    margin-bottom: 32px;
+    position: static;
+    top: 0;
+  }
+
+  #weatherdisplay {
+    width: 60vw;
+    min-width: 320px;
+    max-width: 480px;
+    height: 120px;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    margin: 0 auto;
+  }
+
+  #weatherpic {
+    height: 320px;
+    width: 320px;
+    opacity: 1;
+    margin: 0 auto;
+  }
+
+  #getweather {
+    width: 180px;
+    height: 40px;
+    font-size: 1.1rem;
+    margin: 16px auto;
+    display: block;
+  }
+
+  video {
+    height: 320px;
+    width: 90vw;
+    opacity: 100%;
+    position: static;
+    bottom: 0;
+    border-radius: 14px;
+    margin: 24px auto;
+    display: block;
+  }
+
+  footer {
+    width: 100vw;
+    min-height: 110px;
+    font-size: 1.1rem;
+    padding: 24px 0;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin-top: auto;
+    box-sizing: border-box;
+  }
+
+  #footertext,
+  #footerlinks {
+    width: 100vw;
+    text-align: center;
+    margin: 10px 0;
+  }
+}
