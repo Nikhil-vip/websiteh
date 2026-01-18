@@ -1,0 +1,112 @@
+#topbar {
+  height: 50px;
+  background-color: rgb(65, 65, 255);
+}
+
+/******************************NAVBAR*****************************/
+#navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgba(214, 212, 212, 0.6);
+}
+
+/******************************FOOTER***************************/
+footer {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+#footertext {
+  font-size: 1.2rem;
+  color: rgb(65, 65, 255);
+}
+
+#footerlinks {
+  margin-top: 10px;
+}
+
+#footerlinks a {
+  color: blue;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+#footerlinks a:hover {
+  text-decoration: underline;
+}
+
+a {
+  color: rgb(65, 65, 255);
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+a:hover {
+  color: black;
+  transform: scale(1.05);
+}
+
+/* Mobile optimization */
+@media (max-width: 600px) {
+  #topbar {
+    height: 40px;
+  }
+
+  #navbar {
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 0;
+    gap: 8px;
+    font-size: x-small;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  a {
+    font-size: 0.8rem;
+  }
+
+
+  h1 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+
+  .hover-text {
+    font-size: 1rem;
+    padding-top: 40px;
+    height: 50%;
+  }
+
+  footer {
+    font-size: 1rem;
+    padding: 10px;
+    position: static;
+    width: 100%;
+  }
+
+  #footertext {
+    font-size: 1rem;
+    padding: 5px 0;
+  }
+
+  #footerlinks {
+    margin-top: 5px;
+  }
+
+  #footerlinks a {
+    margin: 0 5px;
+    font-size: 1rem;
+  }
+
+}
