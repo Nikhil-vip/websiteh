@@ -21,7 +21,7 @@ function getweather() {
         document.getElementById("weatherpic").style.backgroundImage = "url('rainy-removebg-preview.png')";
       }
       if (data.current.condition.text.toLowerCase().includes("snow")) {
-        document.getElementById("weatherpic").style.backgroundImage = "url('snowy-removebg-preview.png')";
+        document.getElementById("weatherpic").style.backgroundImage = "url('snow-removebg-preview.png')";
       }
       if (data.current.condition.text.toLowerCase().includes("cloudls")) {
         document.getElementById("weatherpic").style.backgroundImage = "url('partly_cloudy-removebg-preview.png')";
