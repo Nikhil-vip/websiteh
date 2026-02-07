@@ -70,10 +70,10 @@ a:hover {
 }
 
 #second {
-  border: 2px solid black;
+  border: 2px solid rgb(0, 0, 0);
   height: 500px;
   width: 500px;
-  background-image: url('valley\ chose.png');
+  background-image: url('valley_click.jpg');
   background-size: cover;
   position: relative;
   transition: 0.5s;
@@ -332,6 +332,7 @@ footer {
   position: relative;
   bottom: 0;
   width: 100%;
+  background-color: rgb(65, 65, 255);
 }
 
 #footertext {

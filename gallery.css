@@ -151,6 +151,14 @@ a:hover {
   background-size: cover;
 }
 
+#valleypic5 {
+  height: 380px;
+  width: 300px;
+  background-image: url(valley.5.jpeg);
+  background-size: contain;
+  background-position: center;
+}
+
 /******************************P i c t u r e s (random)****************************/
 #random {
   display: grid;
